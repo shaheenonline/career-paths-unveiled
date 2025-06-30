@@ -73,7 +73,7 @@ const About = () => {
       <section className="pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="text-sm text-orange-600 font-medium mb-4">ABOUT TRUEFIRMS</div>
+            <div className="text-sm text-purple-600 font-medium mb-4">ABOUT TRUEFIRMS</div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Your Gateway to Verified Agencies and Global Projects
             </h1>
@@ -90,7 +90,7 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">
@@ -106,20 +106,20 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="text-sm text-orange-600 font-medium mb-4">5 PROMISES</div>
+            <div className="text-sm text-purple-600 font-medium mb-4">5 PROMISES</div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">TrueFirms Talent Promise</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {promises.map((promise, index) => (
-              <Card key={index} className={`p-6 hover:shadow-lg transition-shadow ${index === 1 ? 'bg-blue-900 text-white' : 'bg-white'}`}>
+              <Card key={index} className={`p-6 hover:shadow-lg transition-shadow ${index === 1 ? 'bg-purple-600 text-white' : 'bg-white'}`}>
                 <CardContent className="pt-6">
-                  <div className={`w-12 h-12 ${index === 1 ? 'bg-blue-800' : 'bg-orange-100'} rounded-lg flex items-center justify-center mx-auto mb-4`}>
-                    <promise.icon className={`h-6 w-6 ${index === 1 ? 'text-white' : 'text-orange-600'}`} />
+                  <div className={`w-12 h-12 ${index === 1 ? 'bg-purple-700' : 'bg-purple-100'} rounded-lg flex items-center justify-center mx-auto mb-4`}>
+                    <promise.icon className={`h-6 w-6 ${index === 1 ? 'text-white' : 'text-purple-600'}`} />
                   </div>
                   <h3 className={`text-lg font-semibold mb-2 ${index === 1 ? 'text-white' : 'text-gray-900'}`}>
                     {promise.title}
                   </h3>
-                  <p className={`text-sm ${index === 1 ? 'text-blue-100' : 'text-gray-600'}`}>
+                  <p className={`text-sm ${index === 1 ? 'text-purple-100' : 'text-gray-600'}`}>
                     {promise.description}
                   </p>
                 </CardContent>
@@ -133,10 +133,10 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-br from-orange-50 to-blue-50 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-purple-50 to-slate-50 rounded-2xl p-8">
               <div className="bg-white rounded-xl shadow-lg p-6">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Search className="h-8 w-8 text-orange-600" />
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Search className="h-8 w-8 text-purple-600" />
                 </div>
               </div>
             </div>
@@ -169,15 +169,15 @@ const About = () => {
                   </div>
                 ))}
               </div>
-              <Button className="bg-orange-600 hover:bg-orange-700">
+              <Button className="bg-purple-600 hover:bg-purple-700">
                 Become a Service Provider
               </Button>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-slate-50 to-purple-50 rounded-2xl p-8">
               <div className="bg-white rounded-xl shadow-lg p-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Talent Providers</h3>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-                  <Users className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
+                  <Users className="h-8 w-8 text-purple-600" />
                 </div>
               </div>
             </div>
@@ -195,9 +195,9 @@ const About = () => {
                 At TrueFirms, we recognize the harsh reality of global layoffs that compel agencies to let go of skilled professionals during project downturns. Our mission is to break this cycle by linking agencies with talent seekers, keeping professionals engaged in meaningful work. By offering a platform for agencies to utilize their available talent, we not only protect jobs but also help agencies retain their workforce. TrueFirms is dedicated to promoting a dynamic talent ecosystem that benefits both talents and businesses.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-orange-100 to-blue-100 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-purple-100 to-slate-100 rounded-2xl p-8">
               <div className="bg-white rounded-xl shadow-lg p-6 text-center">
-                <div className="text-2xl font-bold text-blue-600 mb-2">B2B</div>
+                <div className="text-2xl font-bold text-purple-600 mb-2">B2B</div>
                 <div className="text-gray-600">Business Solutions</div>
               </div>
             </div>
@@ -211,11 +211,11 @@ const About = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently asked questions</h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg border border-gray-200 p-4">
+              <div key={index} className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
                 <div className="flex items-center justify-between">
                   <span className="text-gray-900 font-medium">{faq}</span>
-                  <div className="w-6 h-6 rounded-full border-2 border-orange-600 flex items-center justify-center">
-                    <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
+                  <div className="w-6 h-6 rounded-full border-2 border-purple-600 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -225,16 +225,16 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-800">
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-700">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white mb-4">
             Connect with your next best customer on TrueFirms
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-purple-100 mb-8">
             Whether you're looking for your next opportunity or seeking top talent, 
             we're here to help you succeed.
           </p>
-          <Button size="lg" className="bg-orange-600 hover:bg-orange-700">
+          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
             Become a Service Provider
           </Button>
         </div>
