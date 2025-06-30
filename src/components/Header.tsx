@@ -3,6 +3,7 @@ import React from 'react';
 import { Search, Bell, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,24 +13,26 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-purple-600">JobHub</h1>
+              <Link to="/">
+                <h1 className="text-2xl font-bold text-purple-600">JobHub</h1>
+              </Link>
             </div>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="/" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <Link to="/" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
               Home
-            </a>
-            <a href="/jobs" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            </Link>
+            <Link to="/jobs" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
               Find Jobs
-            </a>
+            </Link>
             <a href="#" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
               For Employers
             </a>
-            <a href="#" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <Link to="/about" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
               About
-            </a>
+            </Link>
           </nav>
 
           {/* Search Bar */}
@@ -49,12 +52,16 @@ const Header = () => {
             <Button variant="ghost" size="sm" className="hidden md:flex">
               <Bell className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="sm" className="hidden md:flex">
-              Sign In
-            </Button>
-            <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
-              Post Job
-            </Button>
+            <Link to="/login">
+              <Button variant="outline" size="sm" className="hidden md:flex">
+                Sign In
+              </Button>
+            </Link>
+            <Link to="/post-job">
+              <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                Post Job
+              </Button>
+            </Link>
             <Button variant="ghost" size="sm" className="md:hidden">
               <Menu className="h-4 w-4" />
             </Button>
