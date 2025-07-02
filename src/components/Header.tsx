@@ -27,6 +27,9 @@ const Header = () => {
             <Link to="/jobs" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
               Find Jobs
             </Link>
+            <Link to="/truehire-ai" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+              TrueHire AI
+            </Link>
             <a href="#" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
               For Employers
             </a>
