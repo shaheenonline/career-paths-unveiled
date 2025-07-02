@@ -7,18 +7,18 @@ import { Link } from 'react-router-dom';
 
 const TrueHireAI = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900" style={{background: 'linear-gradient(135deg, #1e293b 0%, #581c87 50%, #1e293b 100%)'}}>
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
         <div className="relative max-w-7xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <div className="relative">
-              <Bot className="h-20 w-20 text-purple-400 animate-pulse" />
+              <Bot className="h-20 w-20 animate-pulse" style={{color: '#9333EA'}} />
               <Sparkles className="h-6 w-6 text-yellow-400 absolute -top-2 -right-2 animate-bounce" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6" style={{background: `linear-gradient(135deg, #9333EA 0%, #3B82F6 50%, #06b6d4 100%)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
             TrueHire AI-Agents
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -26,10 +26,10 @@ const TrueHireAI = () => {
             precision matching, and seamless candidate engagement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg">
+            <Button size="lg" className="text-white px-8 py-4 text-lg" style={{background: `linear-gradient(135deg, #9333EA 0%, #3B82F6 100%)`}}>
               Deploy AI Agent <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-4 text-lg">
+            <Button variant="outline" size="lg" className="px-8 py-4 text-lg" style={{borderColor: '#9333EA', color: '#9333EA'}} onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#9333EA'; e.currentTarget.style.color = 'white'}} onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#9333EA'}}>
               Watch Demo
             </Button>
           </div>
@@ -47,11 +47,11 @@ const TrueHireAI = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="bg-slate-800/50 border-purple-500/20 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group">
+            <Card className="bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group" style={{borderColor: '#9333EA33'}}>
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-purple-600/20 rounded-lg group-hover:bg-purple-600/30 transition-colors">
-                    <Brain className="h-6 w-6 text-purple-400" />
+                  <div className="p-2 rounded-lg group-hover:bg-opacity-30 transition-colors" style={{backgroundColor: '#9333EA33'}}>
+                    <Brain className="h-6 w-6" style={{color: '#9333EA'}} />
                   </div>
                   <CardTitle className="text-white">Intelligent Screening</CardTitle>
                 </div>
@@ -63,11 +63,11 @@ const TrueHireAI = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-slate-800/50 border-cyan-500/20 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group">
+            <Card className="bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group" style={{borderColor: '#3B82F633'}}>
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-cyan-600/20 rounded-lg group-hover:bg-cyan-600/30 transition-colors">
-                    <Target className="h-6 w-6 text-cyan-400" />
+                  <div className="p-2 rounded-lg group-hover:bg-opacity-30 transition-colors" style={{backgroundColor: '#3B82F633'}}>
+                    <Target className="h-6 w-6" style={{color: '#3B82F6'}} />
                   </div>
                   <CardTitle className="text-white">Precision Matching</CardTitle>
                 </div>
@@ -79,11 +79,11 @@ const TrueHireAI = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-slate-800/50 border-pink-500/20 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group">
+            <Card className="bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group" style={{borderColor: '#9333EA33'}}>
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-pink-600/20 rounded-lg group-hover:bg-pink-600/30 transition-colors">
-                    <Users className="h-6 w-6 text-pink-400" />
+                  <div className="p-2 rounded-lg group-hover:bg-opacity-30 transition-colors" style={{backgroundColor: '#9333EA33'}}>
+                    <Users className="h-6 w-6" style={{color: '#9333EA'}} />
                   </div>
                   <CardTitle className="text-white">Automated Engagement</CardTitle>
                 </div>
@@ -95,11 +95,11 @@ const TrueHireAI = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-slate-800/50 border-green-500/20 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group">
+            <Card className="bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group" style={{borderColor: '#3B82F633'}}>
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-green-600/20 rounded-lg group-hover:bg-green-600/30 transition-colors">
-                    <Zap className="h-6 w-6 text-green-400" />
+                  <div className="p-2 rounded-lg group-hover:bg-opacity-30 transition-colors" style={{backgroundColor: '#3B82F633'}}>
+                    <Zap className="h-6 w-6" style={{color: '#3B82F6'}} />
                   </div>
                   <CardTitle className="text-white">Real-time Analytics</CardTitle>
                 </div>
@@ -111,11 +111,11 @@ const TrueHireAI = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-slate-800/50 border-orange-500/20 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group">
+            <Card className="bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group" style={{borderColor: '#9333EA33'}}>
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-orange-600/20 rounded-lg group-hover:bg-orange-600/30 transition-colors">
-                    <Cpu className="h-6 w-6 text-orange-400" />
+                  <div className="p-2 rounded-lg group-hover:bg-opacity-30 transition-colors" style={{backgroundColor: '#9333EA33'}}>
+                    <Cpu className="h-6 w-6" style={{color: '#9333EA'}} />
                   </div>
                   <CardTitle className="text-white">Continuous Learning</CardTitle>
                 </div>
@@ -127,11 +127,11 @@ const TrueHireAI = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-slate-800/50 border-indigo-500/20 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group">
+            <Card className="bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300 group" style={{borderColor: '#3B82F633'}}>
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-indigo-600/20 rounded-lg group-hover:bg-indigo-600/30 transition-colors">
-                    <Sparkles className="h-6 w-6 text-indigo-400" />
+                  <div className="p-2 rounded-lg group-hover:bg-opacity-30 transition-colors" style={{backgroundColor: '#3B82F633'}}>
+                    <Sparkles className="h-6 w-6" style={{color: '#3B82F6'}} />
                   </div>
                   <CardTitle className="text-white">Smart Automation</CardTitle>
                 </div>
@@ -159,10 +159,10 @@ const TrueHireAI = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300" style={{background: `linear-gradient(135deg, #9333EA 0%, #3B82F6 100%)`}}>
                   <span className="text-2xl font-bold text-white">1</span>
                 </div>
-                <div className="absolute -inset-4 bg-purple-600/20 rounded-full animate-ping opacity-75"></div>
+                <div className="absolute -inset-4 rounded-full animate-ping opacity-75" style={{backgroundColor: '#9333EA33'}}></div>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Configure Your Agent</h3>
               <p className="text-gray-400">
@@ -172,10 +172,10 @@ const TrueHireAI = () => {
 
             <div className="text-center group">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300" style={{background: `linear-gradient(135deg, #3B82F6 0%, #06b6d4 100%)`}}>
                   <span className="text-2xl font-bold text-white">2</span>
                 </div>
-                <div className="absolute -inset-4 bg-cyan-600/20 rounded-full animate-ping opacity-75 animation-delay-1000"></div>
+                <div className="absolute -inset-4 rounded-full animate-ping opacity-75 animation-delay-1000" style={{backgroundColor: '#3B82F633'}}></div>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">AI Processes Candidates</h3>
               <p className="text-gray-400">
@@ -185,10 +185,10 @@ const TrueHireAI = () => {
 
             <div className="text-center group">
               <div className="relative mb-6">
-                <div className="w-20 h-20 bg-gradient-to-r from-green-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300" style={{background: `linear-gradient(135deg, #9333EA 0%, #3B82F6 100%)`}}>
                   <span className="text-2xl font-bold text-white">3</span>
                 </div>
-                <div className="absolute -inset-4 bg-green-600/20 rounded-full animate-ping opacity-75 animation-delay-2000"></div>
+                <div className="absolute -inset-4 rounded-full animate-ping opacity-75 animation-delay-2000" style={{backgroundColor: '#9333EA33'}}></div>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Get Perfect Matches</h3>
               <p className="text-gray-400">
@@ -202,7 +202,7 @@ const TrueHireAI = () => {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 backdrop-blur-sm rounded-3xl p-12 border border-purple-500/20">
+          <div className="backdrop-blur-sm rounded-3xl p-12" style={{background: 'linear-gradient(135deg, #9333EA22 0%, #3B82F622 100%)', borderColor: '#9333EA33', borderWidth: '1px'}}>
             <h2 className="text-4xl font-bold text-white mb-6">
               Ready to Transform Your Hiring?
             </h2>
@@ -210,11 +210,11 @@ const TrueHireAI = () => {
               Join forward-thinking companies who have revolutionized their recruitment process with TrueHire AI-Agents.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg">
+              <Button size="lg" className="text-white px-8 py-4 text-lg" style={{background: `linear-gradient(135deg, #9333EA 0%, #3B82F6 100%)`}}>
                 Start Free Trial <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white px-8 py-4 text-lg">
+                <Button variant="outline" size="lg" className="px-8 py-4 text-lg" style={{borderColor: '#9333EA', color: '#9333EA'}} onMouseEnter={(e) => {e.currentTarget.style.backgroundColor = '#9333EA'; e.currentTarget.style.color = 'white'}} onMouseLeave={(e) => {e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#9333EA'}}>
                   Contact Sales
                 </Button>
               </Link>

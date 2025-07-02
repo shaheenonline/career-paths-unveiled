@@ -14,29 +14,29 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/">
-                <h1 className="text-2xl font-bold text-purple-600">JobHub</h1>
+                <h1 className="text-2xl font-bold" style={{color: '#9333EA'}}>JobHub</h1>
               </Link>
             </div>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <Link to="/" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" style={{'--hover-color': '#9333EA'} as React.CSSProperties} onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Home
             </Link>
-            <Link to="/jobs" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <Link to="/jobs" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Find Jobs
             </Link>
-            <Link to="/truehire-ai" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <Link to="/truehire-ai" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               TrueHire AI
             </Link>
-            <a href="#" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <a href="#" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               For Employers
             </a>
-            <Link to="/about" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <Link to="/about" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               About
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+            <Link to="/contact" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Contact
             </Link>
           </nav>
@@ -64,7 +64,7 @@ const Header = () => {
               </Button>
             </Link>
             <Link to="/post-job">
-              <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+              <Button size="sm" className="text-white" style={{background: `linear-gradient(135deg, #9333EA 0%, #3B82F6 100%)`}}>
                 Post Job
               </Button>
             </Link>
