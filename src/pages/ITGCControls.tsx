@@ -110,8 +110,8 @@ const ITGCControls = () => {
             <div className="relative">
               <div className="relative z-10 bg-white rounded-3xl p-8 shadow-2xl">
                 <img 
-                  src="/lovable-uploads/6fc1b0ca-e30b-409f-8aa6-5fbe57dd8cf4.png" 
-                  alt="Professional woman working on laptop" 
+                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Colorful software code on computer monitor" 
                   className="w-full h-auto rounded-2xl"
                 />
               </div>
@@ -142,8 +142,8 @@ const ITGCControls = () => {
             <div className="relative">
               <div className="bg-white rounded-3xl p-8 shadow-xl">
                 <img 
-                  src="/lovable-uploads/6fc1b0ca-e30b-409f-8aa6-5fbe57dd8cf4.png" 
-                  alt="Business professionals collaborating" 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Person using MacBook Pro for business operations" 
                   className="w-full h-auto rounded-2xl"
                 />
               </div>
