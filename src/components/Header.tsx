@@ -33,6 +33,9 @@ const Header = () => {
             <Link to="/enterprise" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               Enterprise
             </Link>
+            <Link to="/itgc-controls" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
+              ITGC Controls
+            </Link>
             <Link to="/about" className="text-gray-700 px-3 py-2 text-sm font-medium hover:text-gray-900 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#9333EA'} onMouseLeave={(e) => e.currentTarget.style.color = ''}>
               About
             </Link>
