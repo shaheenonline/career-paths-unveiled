@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Bell, User, Menu } from 'lucide-react';
+import { User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -48,9 +48,6 @@ const Header = () => {
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="hidden md:flex">
-              <Bell className="h-4 w-4" />
-            </Button>
             <Link to="/login">
               <Button variant="outline" size="sm" className="hidden md:flex">
                 Sign In
