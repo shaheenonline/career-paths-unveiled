@@ -157,7 +157,7 @@ const GCC = () => {
                 <div className="flex items-center space-x-2">
                   <Clock className="h-4 w-4 text-orange-500" />
                   <div>
-                    <div className="text-sm font-semibold text-orange-600">< 2 Weeks</div>
+                    <div className="text-sm font-semibold text-orange-600">{"< 2 Weeks"}</div>
                     <div className="text-xs text-gray-600">To get Started</div>
                   </div>
                 </div>
