@@ -14,7 +14,7 @@ const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/">
-                <h1 className="text-2xl font-bold" style={{color: '#9333EA'}}>JobHub</h1>
+                <h1 className="text-2xl font-bold" style={{color: '#9333EA'}}>TrueFirms</h1>
               </Link>
             </div>
           </div>
