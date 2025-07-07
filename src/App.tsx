@@ -17,6 +17,7 @@ import TermsOfService from "./pages/TermsOfService";
 import TrueHireAI from "./pages/TrueHireAI";
 import Enterprise from "./pages/Enterprise";
 import ITGCControls from "./pages/ITGCControls";
+import GCC from "./pages/GCC";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/truehire-ai" element={<TrueHireAI />} />
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/itgc-controls" element={<ITGCControls />} />
+            <Route path="/gcc" element={<GCC />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
