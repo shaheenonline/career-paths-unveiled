@@ -84,40 +84,40 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-gray-900">
+      <section className="bg-gradient-to-br from-purple-50 via-blue-50 to-white py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Explore <span className="text-purple-600">Contract Jobs</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
               Browse 20K+ jobs and skills sorted on TrueFirms to display only match jobs that best match your skills
             </p>
           </div>
 
           {/* Search Bar */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="relative">
-                  <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                  <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 h-6 w-6" />
                   <Input
                     type="text"
                     placeholder="Job, skills or company"
-                    className="pl-12 h-14 text-gray-900 border-gray-200"
+                    className="pl-14 h-16 text-lg border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                   />
                 </div>
                 <div className="relative">
-                  <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                  <MapPin className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 h-6 w-6" />
                   <Input
                     type="text"
                     placeholder="Select a location"
-                    className="pl-12 h-14 text-gray-900 border-gray-200"
+                    className="pl-14 h-16 text-lg border-gray-200 rounded-2xl focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                   />
                 </div>
-                <Button className="h-14 bg-purple-600 hover:bg-purple-700 text-lg font-semibold">
+                <Button className="h-16 bg-purple-600 hover:bg-purple-700 text-lg font-semibold rounded-2xl shadow-lg">
                   Search Jobs
                 </Button>
               </div>
@@ -125,41 +125,41 @@ const Index = () => {
           </div>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold mb-2 text-purple-600">51K+</div>
-              <div className="text-gray-600">Active Jobs</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-5xl font-bold mb-3 text-purple-600">51K+</div>
+              <div className="text-gray-600 text-lg">Active Jobs</div>
             </div>
-            <div>
-              <div className="text-4xl font-bold mb-2 text-purple-600">10K+</div>
-              <div className="text-gray-600">Companies</div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-5xl font-bold mb-3 text-purple-600">10K+</div>
+              <div className="text-gray-600 text-lg">Companies</div>
             </div>
-            <div>
-              <div className="text-4xl font-bold mb-2 text-purple-600">95%</div>
-              <div className="text-gray-600">Success Rate</div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-5xl font-bold mb-3 text-purple-600">95%</div>
+              <div className="text-gray-600 text-lg">Success Rate</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Trusted Companies */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Our Listed Service Providers Have Been <span className="text-purple-600">Trusted By</span>
             </h2>
-            <p className="text-gray-600">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Top companies choose our platform to find the best talent for their projects
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {companies.map((company, index) => (
-              <div key={index} className="flex items-center justify-center p-6 hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+              <div key={index} className="flex items-center justify-center p-8 bg-white rounded-2xl hover:shadow-xl transition-all duration-300 cursor-pointer">
                 <img 
                   src={company.logo} 
                   alt={company.name}
-                  className="w-16 h-16 object-contain grayscale hover:grayscale-0 transition-all"
+                  className="w-20 h-20 object-contain grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </div>
             ))}
@@ -168,31 +168,31 @@ const Index = () => {
       </section>
 
       {/* Top Categories */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Top Categories
             </h2>
-            <p className="text-gray-600">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Explore trending categories and find your next opportunity
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {categories.map((category, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border-0">
-                <CardContent className="p-6 text-center">
-                  <div className={`w-16 h-16 ${category.color} rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4`}>
+              <Card key={index} className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border-0 rounded-3xl overflow-hidden">
+                <CardContent className="p-8 text-center">
+                  <div className={`w-20 h-20 ${category.color} rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-6`}>
                     {category.icon}
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">{category.name}</h3>
-                  <p className="text-sm text-gray-600">{category.jobs.toLocaleString()} jobs available</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{category.name}</h3>
+                  <p className="text-gray-600">{category.jobs.toLocaleString()} jobs available</p>
                 </CardContent>
               </Card>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50">
+          <div className="text-center mt-12">
+            <Button variant="outline" className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-2xl text-lg">
               View All Categories
             </Button>
           </div>
@@ -200,74 +200,74 @@ const Index = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-purple-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">How It Works</h2>
-            <p className="text-purple-100">Get started in just a few simple steps</p>
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">How It Works</h2>
+            <p className="text-xl text-purple-100 max-w-2xl mx-auto">Get started in just a few simple steps</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-              <h3 className="text-xl font-semibold mb-2">Tell Us What You Need</h3>
-              <p className="text-purple-100">Answer a few questions about your skills and preferences</p>
+              <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">1</div>
+              <h3 className="text-2xl font-semibold mb-4">Tell Us What You Need</h3>
+              <p className="text-purple-100 text-lg">Answer a few questions about your skills and preferences</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-              <h3 className="text-xl font-semibold mb-2">We Find & Shortlist</h3>
-              <p className="text-purple-100">Our AI matches you with the best opportunities</p>
+              <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">2</div>
+              <h3 className="text-2xl font-semibold mb-4">We Find & Shortlist</h3>
+              <p className="text-purple-100 text-lg">Our AI matches you with the best opportunities</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-              <h3 className="text-xl font-semibold mb-2">Review Contract Profiles</h3>
-              <p className="text-purple-100">Browse and select from curated job matches</p>
+              <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">3</div>
+              <h3 className="text-2xl font-semibold mb-4">Review Contract Profiles</h3>
+              <p className="text-purple-100 text-lg">Browse and select from curated job matches</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
-              <h3 className="text-xl font-semibold mb-2">Hire with Confidence</h3>
-              <p className="text-purple-100">Start working with verified, top-rated professionals</p>
+              <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-6">4</div>
+              <h3 className="text-2xl font-semibold mb-4">Hire with Confidence</h3>
+              <p className="text-purple-100 text-lg">Start working with verified, top-rated professionals</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Latest Contract Jobs */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Latest Contract <span className="text-purple-600">Jobs</span>
             </h2>
-            <p className="text-gray-600">Discover high-quality contract opportunities from top companies</p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Discover high-quality contract opportunities from top companies</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {contractJobs.map((job) => (
-              <Card key={job.id} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-                <CardContent className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <Badge variant="secondary" className="bg-purple-100 text-purple-700">
+              <Card key={job.id} className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer rounded-3xl border-0 overflow-hidden">
+                <CardContent className="p-8">
+                  <div className="flex items-start justify-between mb-6">
+                    <Badge variant="secondary" className="bg-purple-100 text-purple-700 px-4 py-2 rounded-full">
                       {job.type}
                     </Badge>
-                    <span className="text-sm text-gray-500">{job.duration}</span>
+                    <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">{job.duration}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {job.title}
                   </h3>
-                  <p className="text-gray-700 font-medium mb-3">{job.company}</p>
-                  <div className="flex items-center text-gray-600 mb-4">
-                    <MapPin className="w-4 h-4 mr-2" />
-                    <span>{job.location}</span>
+                  <p className="text-gray-700 font-medium mb-4 text-lg">{job.company}</p>
+                  <div className="flex items-center text-gray-600 mb-6">
+                    <MapPin className="w-5 h-5 mr-2" />
+                    <span className="text-lg">{job.location}</span>
                   </div>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {job.skills.map((skill, index) => (
-                      <Badge key={index} variant="outline" className="text-xs">
+                      <Badge key={index} variant="outline" className="text-sm px-3 py-1 rounded-full">
                         {skill}
                       </Badge>
                     ))}
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-gray-900">{job.salary}</span>
-                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                    <span className="text-2xl font-bold text-gray-900">{job.salary}</span>
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-2xl">
                       Apply Now
                     </Button>
                   </div>
@@ -276,7 +276,7 @@ const Index = () => {
             ))}
           </div>
           <div className="text-center">
-            <Button className="bg-purple-600 hover:bg-purple-700">
+            <Button className="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-2xl text-lg">
               View All Jobs
             </Button>
           </div>
@@ -284,62 +284,62 @@ const Index = () => {
       </section>
 
       {/* Why Use TrueFirms */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Why Use <span className="text-purple-600">TrueFirms</span>
             </h2>
-            <p className="text-gray-600">Discover why thousands of professionals choose our platform</p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Discover why thousands of professionals choose our platform</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6">
                 AI
               </div>
-              <h3 className="text-xl font-semibold mb-2">AI Matching Engine</h3>
-              <p className="text-gray-600">Advanced algorithms match you with the perfect opportunities based on your skills and preferences</p>
+              <h3 className="text-2xl font-semibold mb-4">AI Matching Engine</h3>
+              <p className="text-gray-600 text-lg">Advanced algorithms match you with the perfect opportunities based on your skills and preferences</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              <div className="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-6">
                 ⚡
               </div>
-              <h3 className="text-xl font-semibold mb-2">Quick Insights</h3>
-              <p className="text-gray-600">Get instant feedback and insights about your applications and market trends</p>
+              <h3 className="text-2xl font-semibold mb-4">Quick Insights</h3>
+              <p className="text-gray-600 text-lg">Get instant feedback and insights about your applications and market trends</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+              <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-6">
                 ✓
               </div>
-              <h3 className="text-xl font-semibold mb-2">Verified Trust</h3>
-              <p className="text-gray-600">All companies and professionals are thoroughly vetted for quality and reliability</p>
+              <h3 className="text-2xl font-semibold mb-4">Verified Trust</h3>
+              <p className="text-gray-600 text-lg">All companies and professionals are thoroughly vetted for quality and reliability</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Customer Testimonials */}
-      <section className="py-16 bg-blue-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">See Why Customers Love TrueFirms</h2>
-            <p className="text-blue-100">Read what our community has to say about their experience</p>
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">See Why Customers Love TrueFirms</h2>
+            <p className="text-xl text-blue-100 max-w-2xl mx-auto">Read what our community has to say about their experience</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
-              <Card key={testimonial.id} className="bg-white text-gray-900">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
+              <Card key={testimonial.id} className="bg-white text-gray-900 rounded-3xl border-0 overflow-hidden">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                      <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-4">"{testimonial.content}"</p>
+                  <p className="text-gray-700 mb-6 text-lg">"{testimonial.content}"</p>
                   <div className="flex items-center">
-                    <img src={testimonial.avatar} alt={testimonial.name} className="w-10 h-10 rounded-full mr-3" />
+                    <img src={testimonial.avatar} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
                     <div>
-                      <div className="font-semibold">{testimonial.name}</div>
-                      <div className="text-sm text-gray-600">{testimonial.role}</div>
+                      <div className="font-semibold text-lg">{testimonial.name}</div>
+                      <div className="text-gray-600">{testimonial.role}</div>
                     </div>
                   </div>
                 </CardContent>
@@ -350,30 +350,30 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Frequently Asked <span className="text-purple-600">Questions</span>
             </h2>
           </div>
-          <div className="space-y-6">
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">How does TrueFirms work?</h3>
-              <p className="text-gray-600">TrueFirms connects talented professionals with top companies through our AI-powered matching system. Simply create your profile, browse opportunities, and apply to jobs that match your skills.</p>
+          <div className="space-y-8">
+            <div className="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">How does TrueFirms work?</h3>
+              <p className="text-gray-600 text-lg">TrueFirms connects talented professionals with top companies through our AI-powered matching system. Simply create your profile, browse opportunities, and apply to jobs that match your skills.</p>
             </div>
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Is TrueFirms free to use?</h3>
-              <p className="text-gray-600">Yes, creating a profile and applying to jobs is completely free for professionals. We only charge companies for our recruitment services.</p>
+            <div className="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Is TrueFirms free to use?</h3>
+              <p className="text-gray-600 text-lg">Yes, creating a profile and applying to jobs is completely free for professionals. We only charge companies for our recruitment services.</p>
             </div>
-            <div className="border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">How do I get started?</h3>
-              <p className="text-gray-600">Simply click "Get Started" and create your professional profile. Our AI will then match you with relevant opportunities based on your skills and preferences.</p>
+            <div className="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">How do I get started?</h3>
+              <p className="text-gray-600 text-lg">Simply click "Get Started" and create your professional profile. Our AI will then match you with relevant opportunities based on your skills and preferences.</p>
             </div>
           </div>
-          <div className="text-center mt-8">
-            <p className="text-gray-600 mb-4">Still have questions?</p>
-            <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50">
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-6 text-lg">Still have questions?</p>
+            <Button variant="outline" className="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-2xl text-lg">
               Contact Support
             </Button>
           </div>
@@ -381,29 +381,29 @@ const Index = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className="py-20 bg-gradient-to-r from-purple-600 via-blue-600 to-purple-700 text-white">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Let AI Match You with <span className="text-yellow-400">Perfect Talent</span>
           </h2>
-          <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-purple-100 mb-12 max-w-3xl mx-auto leading-relaxed">
             Experience the future of hiring with AI intelligent job matching that connects you with the best talent for your project needs
           </p>
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 mr-4">
+          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 text-xl px-12 py-4 rounded-2xl font-semibold shadow-lg">
             Get Started
           </Button>
-          <div className="grid grid-cols-3 gap-8 mt-12 max-w-2xl mx-auto">
-            <div>
-              <div className="text-3xl font-bold mb-2">51K+</div>
-              <div className="text-purple-200">Professionals</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16 max-w-3xl mx-auto">
+            <div className="bg-white bg-opacity-10 rounded-2xl p-8">
+              <div className="text-4xl font-bold mb-3">51K+</div>
+              <div className="text-purple-200 text-lg">Professionals</div>
             </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">10K+</div>
-              <div className="text-purple-200">Companies</div>
+            <div className="bg-white bg-opacity-10 rounded-2xl p-8">
+              <div className="text-4xl font-bold mb-3">10K+</div>
+              <div className="text-purple-200 text-lg">Companies</div>
             </div>
-            <div>
-              <div className="text-3xl font-bold mb-2">95%</div>
-              <div className="text-purple-200">Success Rate</div>
+            <div className="bg-white bg-opacity-10 rounded-2xl p-8">
+              <div className="text-4xl font-bold mb-3">95%</div>
+              <div className="text-purple-200 text-lg">Success Rate</div>
             </div>
           </div>
         </div>
